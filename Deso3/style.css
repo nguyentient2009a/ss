@@ -1,0 +1,158 @@
+
+body {
+    background-color: #02021E;
+
+}
+
+div {
+
+}
+
+.container {
+    border: 1px solid #cc3300;
+    width: 962px;
+    /*padding-right: 80px;*/
+    /*padding-left: 80px;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    text-align: right;
+    background-image: url("img/mm_entertainment_image.jpg");
+    height: 140px;
+    padding-top: 1px;
+
+
+}
+
+.header h1 {
+    color: #CCFF99;
+    font-size: 30px;
+}
+
+.header p {
+    color: #ff9933;
+    font-size: 12px;
+}
+
+.nav-bar
+ul {
+    border: 1px solid #cc3300;
+    height: 2em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003366;
+}
+
+li {
+    float: left;
+    border: 1px solid #cc3300;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: #CCFF99;
+    text-align: center;
+    padding: 7px 15px;
+    text-decoration: none;
+}
+
+.content {
+    padding-left: 15px;
+}
+
+.content .item-1 h1 {
+    color: #cc3300;
+}
+
+.content .item-2 {
+    text-align: center;
+    color: #3366cc;
+    padding-top: 60px;
+
+}
+
+.item-3 form {
+    margin: 20px;
+    border: 1px solid #3366cc;
+    border-radius: 15px;
+    padding: 30px;
+    align-items: center;
+}
+
+.item-3 p {
+    color: #3366cc;
+}
+
+.column {
+    float: left;
+    width: 27.33%;
+    padding: 15px;
+}
+
+/* Clear float khác sau các cột */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    color: #3366cc;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer {
+    padding-top: 20px;
+    border: 1px solid #cc3300;
+    font-size: 11px;
+    color: #ccc;
+    text-align: center
+}
+
+
+/* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình
+có chiều rộng dưới 600px */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
